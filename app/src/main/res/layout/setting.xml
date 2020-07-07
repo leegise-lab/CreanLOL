@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/set"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="설정"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="문의하기"
+        android:textSize="13pt"
+        app:layout_constraintTop_toBottomOf="@id/set"
+        android:background="@color/blue"
+        android:paddingLeft="5dp"/>
+
+    <Button
+        android:id="@+id/rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="이용 약관"
+        android:textSize="13pt"
+        app:layout_constraintTop_toBottomOf="@id/inquiry"
+        android:background="@color/orange"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"/>
+
+    <Button
+        android:id="@+id/logoutbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="로그아웃"
+        android:textSize="13pt"
+        app:layout_constraintTop_toBottomOf="@id/rule"
+        android:background="@color/green"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"/>
+
+    <Button
+        android:id="@+id/Withdrawalbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="회원 탈퇴"
+        android:textSize="13pt"
+        app:layout_constraintTop_toBottomOf="@id/logoutbt"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_color"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제작자 소개"
+        android:textColor="#000000"
+        android:textSize="20pt"
+        app:layout_constraintTop_toBottomOf="@id/Withdrawalbt"
+        app:layout_constraintLeft_toLeftOf="@id/ponn"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/maker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="만든이 : 이기세"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dev" />
+
+    <Button
+        android:id="@+id/adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="주소 : 서울특별시 관악구 봉천동"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maker" />
+
+    <Button
+        android:id="@+id/ponn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="연락처 : 01033722333"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adress" />
+
+    <Button
+        android:id="@+id/homepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="홈페이지 : 없음"
+        android:textSize="10pt"
+        app:layout_constraintTop_toBottomOf="@id/ponn"
+        app:layout_constraintLeft_toLeftOf="@id/ponn"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="제작일 : 2019-08-20"
+        android:textSize="10pt"
+        app:layout_constraintLeft_toLeftOf="@id/ponn"
+        app:layout_constraintTop_toBottomOf="@id/homepage" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/timo"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+

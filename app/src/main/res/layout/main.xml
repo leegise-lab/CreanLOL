@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/timo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/creanlol"
+        android:src="@drawable/timo2"/>
+    <TextView
+        android:id="@+id/creanlol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CreanLOL"
+        android:textSize="50dp"
+        android:gravity="bottom"
+        android:layout_gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/opgg"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="롤 전적 검색"
+        android:background="@color/light_blue"
+        app:layout_constraintTop_toBottomOf="@id/creanlol"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/idsearch"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="신상 검색"
+        android:background="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/opgg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/myid"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="내 신상정보 확인"
+        android:background="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/idsearch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@color/line_color"
+        android:text="설정"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/myid"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

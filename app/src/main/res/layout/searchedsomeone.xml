@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/timo"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/timo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/abc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검색하신 소환사의 정보입니다."
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timo" />
+    <TextView
+        android:id="@+id/someoneSummoner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="소환사명 : "
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/abc"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/someoneSummoner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="16"
+        android:textSize="25dp"
+        android:hint="소환사명"
+        app:layout_constraintBottom_toBottomOf="@+id/someoneSummoner"
+        app:layout_constraintLeft_toRightOf="@id/someoneSummoner"
+        app:layout_constraintTop_toTopOf="@id/someoneSummoner" />
+
+    <TextView
+        android:id="@+id/someonename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 : "
+        app:layout_constraintTop_toBottomOf="@id/someoneSummoner"
+        app:layout_constraintLeft_toLeftOf="@id/someoneSummoner"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/someoneage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생년월일 : "
+        app:layout_constraintTop_toBottomOf="@id/someonename"
+        app:layout_constraintLeft_toLeftOf="@id/someoneSummoner"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/someonearea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지역 : "
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/someoneage"
+        app:layout_constraintLeft_toLeftOf="@id/someoneage"/>
+
+    <TextView
+        android:id="@+id/someonewritename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textSize="20dp"
+        android:hint="이름"
+        app:layout_constraintBottom_toBottomOf="@+id/someonename"
+        app:layout_constraintLeft_toRightOf="@id/someonename"
+        app:layout_constraintTop_toTopOf="@id/someonename" />
+
+    <TextView
+        android:id="@+id/someonewriteage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textSize="20dp"
+        android:hint="생년월일"
+        app:layout_constraintBottom_toBottomOf="@+id/someoneage"
+        app:layout_constraintLeft_toRightOf="@id/someoneage"
+        app:layout_constraintTop_toTopOf="@id/someoneage" />
+
+    <TextView
+        android:id="@+id/someonewritearea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textSize="20dp"
+        android:hint="지역"
+        app:layout_constraintBottom_toBottomOf="@+id/someonearea"
+        app:layout_constraintLeft_toRightOf="@id/someonearea"
+        app:layout_constraintTop_toTopOf="@id/someonearea" />
+    <TextView
+        android:id="@+id/someoneemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="이메일 : "
+        app:layout_constraintTop_toBottomOf="@+id/someonearea"
+        app:layout_constraintLeft_toLeftOf="@id/someonearea"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/someonewriteemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="이메일"
+        app:layout_constraintTop_toTopOf="@+id/someoneemail"
+        app:layout_constraintLeft_toRightOf="@id/someoneemail"
+        android:layout_marginLeft="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

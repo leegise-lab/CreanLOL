@@ -1,0 +1,171 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--5줄은 포커스를 하나로 두겠다고 선언하는 내용-->
+    <!--스크롤뷰가 하나로 합쳐지게 함-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+        <ImageView
+            android:id="@+id/usericon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+        <TextView
+            android:id="@+id/usernick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="닉네임"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            app:layout_constraintLeft_toRightOf="@id/usericon"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/userwin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="승"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="@id/usernick"
+            app:layout_constraintBottom_toBottomOf="@id/usericon"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/userlose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/userwin"
+            app:layout_constraintLeft_toRightOf="@id/userwin"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="패"/>
+        <TextView
+            android:id="@+id/userwinrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/usertier"
+            app:layout_constraintLeft_toLeftOf="@id/usernick"
+            android:layout_marginTop="5dp"
+            android:text="승률"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/usertiertx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/userwinrate"
+            app:layout_constraintBottom_toBottomOf="@id/userpoint"
+            app:layout_constraintLeft_toLeftOf="@id/usernick"
+            android:text="티어"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/userpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/usertier"
+            app:layout_constraintLeft_toLeftOf="@id/usernick"
+            android:layout_marginBottom="5dp"
+            android:text="포인트"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/usertier"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/usericon"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/gametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="최근 20게임 전적"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/usertier" />
+        <TextView
+            android:id="@+id/gamewin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="몇 승"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gametext" />
+        <TextView
+            android:id="@+id/gamelose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="몇 패"
+            app:layout_constraintLeft_toRightOf="@id/gamewin"
+            app:layout_constraintTop_toTopOf="@id/gamewin"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/Averagekda"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="kda 평균"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gamewin" />
+
+        <TextView
+            android:id="@+id/gameposition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="주 챔피언"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintLeft_toRightOf="@id/gametext"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gametext" />
+        <ImageView
+            android:id="@+id/mostchampimg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintEnd_toEndOf="@+id/gameposition"
+            app:layout_constraintStart_toStartOf="@+id/gameposition"
+            app:layout_constraintTop_toBottomOf="@id/gameposition"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toTopOf="@id/rv"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Averagekda"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="10dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

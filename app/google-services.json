@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "885646725769",
+    "firebase_url": "https://creanlol.firebaseio.com",
+    "project_id": "creanlol",
+    "storage_bucket": "creanlol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885646725769:android:4e755903959899afbe2c58",
+        "android_client_info": {
+          "package_name": "com.example.creanlol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885646725769-bapfnsav1g5r7c6on1hjof9l581hej23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAivWM93SG21xY7wZpbdDedr4oXd6TDJ_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885646725769-bapfnsav1g5r7c6on1hjof9l581hej23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
